@@ -1,0 +1,108 @@
+<!doctype html>
+<html dir="ltr" lang="en-GB">
+  <head>
+    <title>NetFelix</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <style>:root { --color-link: Brown; --color-text-secondary: #333; }</style>
+</head>
+<body>
+  <!-- header area -->
+  <header>
+    <a href="/">NetFelix</a>
+    
+    <!-- navigation menu -->
+    <nav>
+      <ul>
+        <li><a href="/about/" aria-current="page">About</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+    </nav>
+
+    <!-- search form -->
+    <search>
+      <form action="/"> 
+        <label for="movie">Find a Movie</label>
+        <input type="search" id="movie" name="q" />
+
+        <button type="submit">Search</button>
+      </form>
+    </search>
+  </header>
+
+  <!-- main content area -->
+  <main>    
+    <!-- main title -->
+    <h1>About NetFelix</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, adipisci tempore praesentium, nulla ipsum tempora exercitationem ea similique dignissimos odit quis facere ipsam, nostrum minima iusto blanditiis ducimus maiores sit?</p>
+
+    <!-- heading -->
+    <h2>How to use</h2>
+    <p>Suscipit, adipisci tempore praesentium, nulla ipsum tempora exercitationem ea similique.</p>
+
+    <!-- expand/collapse section -->
+    <details>
+      <summary>System Requirements</summary>
+      <p>
+        Requires a computer running an operating system. The computer must have some
+        memory and ideally some kind of long-term storage. An input device as well
+        as some form of output device is recommended.
+      </p>
+    </details>
+
+    <!-- heading -->
+    <h2>Accessibility</h2>
+    <p>Suscipit, adipisci tempore praesentium, nulla ipsum tempora exercitationem ea similique.</p>
+
+    <!-- link to a pdf. We want browser to download rather than display it -->
+    <a download href="./assets/AccessibilityStatement.pdf">Download Accessibility Statement (PDF, 600 kB)</a>
+
+    <!-- heading -->
+    <h2>Services</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, adipisci tempore praesentium, nulla ipsum tempora exercitationem ea similique dignissimos odit quis facere ipsam, nostrum minima iusto blanditiis ducimus maiores sit?</p>
+
+    <!-- image -->
+    <figure>
+      <img
+        src="/assets/cat.avif"
+        alt="A beautiful brown tabby kitten sits on the floor, looking downwards"
+        loading="lazy"
+        width="475"
+        height="634" />
+      <figcaption>A beautiful brown tabby kitten</figcaption>
+    </figure>
+
+    <!-- heading -->
+    <h2>Knowledge</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, adipisci tempore praesentium, nulla ipsum tempora exercitationem ea similique dignissimos odit quis facere ipsam, nostrum minima iusto blanditiis ducimus maiores sit?</p>
+
+    <!-- modal dialogue -->
+    <button commandfor="my-dialog" command="show-modal">Learn about “Favouriting”</button>
+    <dialog id="my-dialog">
+      <p>Favouriting allows you to lorem ipsum dolor sit amet.</p>
+      <button command="close" commandfor="my-dialog">Close</button>
+    </dialog>
+
+    <!-- heading -->
+    <h2>Principles</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, adipisci tempore praesentium, nulla ipsum tempora exercitationem ea similique dignissimos odit quis facere ipsam, nostrum minima iusto blanditiis ducimus maiores sit?</p>
+
+    <!-- subheading -->
+    <h3>Available to all</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur sint cum nobis provident similique obcaecati aut fugit eveniet minima, iusto fugiat iure laborum nesciunt impedit, nihil vero sapiente tempore!</p>
+
+    <h3>Affordable prices</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur sint cum nobis provident similique obcaecati aut fugit eveniet minima, iusto fugiat iure laborum nesciunt impedit, nihil vero sapiente tempore!</p>
+
+    <h3>Great service</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur sint cum nobis provident similique obcaecati aut fugit eveniet minima, iusto fugiat iure laborum nesciunt impedit, nihil vero sapiente tempore!</p>
+  </main>
+
+  <!-- footer area -->
+  <footer>
+    <p>© NetFelix Services Ltd. All Rights Reserved. Company number 11111111.</p>
+  </footer>
+</body>
+</html>
